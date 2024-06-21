@@ -1,50 +1,122 @@
-﻿<!--小K网 xkwo.com -->
-<!doctype html>
-<html>
-<!--小K网 xkwo.com -->
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=11" id="mixia_vpid">
-    <title>小K网</title>
-    <meta name=keywords content="小K网">
-    <meta name=description content="小K网">
-    <link rel="icon" href="https://cdn.jyace.cn/wp-content/themes/riplus/assets/img/favicon.png">
-    <link rel="shortcut icon" href="https://cdn.jyace.cn/wp-content/themes/riplus/assets/img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<!--小K网 xkwo.com -->
-<body>
-    <div class="content">
-        <div class="title">小K网</div>
-        <hr class="hr" />
-        <div class="discription">盛年不重来，一日难再晨。及时当勉励，岁月不待人。</div>
-        <hr class="hr">
-        <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-                <li class="navigation__item"><a href="https://www.xkwo.com" target="_blank" title="首页">首页</a></li>
-                <li class="navigation__item"><a href="https://tool.xkwo.com" target="_blank" title="在线工具箱">在线工具箱</a></li>
-                 <li class="navigation__item"><a href="https://www.juming.com/t/33210x2a49c4" title="域名抢注">域名抢注</a></li>
-            <li class="navigation__item"><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=_ImJXXM0soL8XmJsbFpol2eEqT4IZExP&authKey=r%2Bfg3rphvJBCSyARpp9U6104wAM7vMOyfchqp%2FdMFMk6U0%2BOeEraHcupVrpgBtb1&noverify=0&group_code=460551" title="WP-China-Yes">QQ群</a></li>
-            </ul>
-        </nav>
-        <div class="icp"><a href="http://www.beian.miit.gov.cn" class="icpnum" target="_blank"
-                rel="nofollow">ICP备88888888号</a></div>
-    </div>
-<!--小K网 xkwo.com -->
-    <div class="landscape"></div>
-    <div class="filter"></div>
-    <canvas id="canvas"></canvas>
-    <script type="text/javascript" src="js/sky.js"></script>
-</body>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?c8375f1ac141d4b69a5edf133f2cbaab";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>风立Rkpsk_ki☆云索引</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://tuapi.eees.cc/api.php?category=dongman&px=m&type=302');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+            padding-bottom: 20%;
+            position: relative;
+            bottom: 0;
+        }
+
+        #toggleButton {
+            display: none;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #EEE;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #navigation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            transition: transform 0.3s ease;
+        }
+
+        .card {
+            background: #EEE;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+            background: linear-gradient(rgba(238, 238, 238, 0.65), rgba(238, 238, 238, 0.65));
+            backdrop-filter: blur(5px);
+        }
+
+        .card a {
+            color: hsl(var(--hue), 100%, 50%);
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .card a:hover {
+            color: hsl(var(--hue), 100%, 30%);
+        }
+
+        /* Add your card styles here */
+
+        @media (max-width: 768px) {
+            #toggleButton {
+                display: block;
+            }
+            #navigation {
+                flex-direction: column;
+                align-items: flex-start;
+                transform: translateX(-100%);
+            }
+            #navigation.open {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="toggleButton" onclick="toggleNavigation()">展开热键</button>
+        <div id="navigation" class="navigation">
+            <!-- Your card elements go here -->
+            <div class="card">
+                <a href="http://xiaoniyun.github.io">关于北极星 ></a>
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?k=cUdhrgRbCEMBWqsFjZlM1w0K3HD7Vxdr">添加QQ ></a>
+            </div>
+            <!-- Add more card elements as needed -->
+        </div>
+    </div>
+
+    <script>
+        function toggleNavigation() {
+            var nav = document.getElementById('navigation');
+            nav.classList.toggle('open');
+        }
+
+        // Detect if the screen size is less than 768px and toggle the navigation accordingly
+        if (window.innerWidth < 768) {
+            document.getElementById('toggleButton').style.display = 'block';
+        }
+
+        // Listen for changes in screen size
+        window.addEventListener('resize', function() {
+            if (window.innerWidth < 768) {
+                document.getElementById('toggleButton').style.display = 'block';
+            } else {
+                document.getElementById('toggleButton').style.display = 'none';
+            }
+        });
+    </script>
+</body>
 </html>
